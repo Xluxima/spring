@@ -45,10 +45,19 @@
             <artifactId>spring-test</artifactId>
             <version>4.1.7.RELEASE</version>
         </dependency>
-        <dependency>
+        
+		<!-- In order to prevent locale bundle exception -->
+		<dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>servlet-api</artifactId>
             <version>2.5</version>
+        </dependency>
+		
+		<!-- Tomcat needs it-->
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>jstl</artifactId>
+            <version>1.2</version>
         </dependency>
         <dependency>
             <groupId>javax</groupId>
